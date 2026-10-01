@@ -1,0 +1,23 @@
+Architectures: amd64
+Codename: couchbox
+Components: main
+Date: Wed, 30 Sep 2026 10:30:40 +0000
+Label: Couchbox OS
+Origin: Couchbox OS
+Suite: couchbox
+MD5Sum:
+ 08355443c20e32ead9253e3bd2e2a3f9              150 Release
+ 34fd5e85cac77c2d4d0d609c5c9ce03f             1000 main/binary-amd64/Packages
+ 7790521039d6561e1e8fb48256a4f971              610 main/binary-amd64/Packages.gz
+SHA1:
+ a1e037e53ed7b25938aa7ae90217b43c6d1a13e0              150 Release
+ cac9c9a5abbdf205bbd75149e66cd3195ae7bae0             1000 main/binary-amd64/Packages
+ 63fce0db66421684e1332bc97d99841db3481739              610 main/binary-amd64/Packages.gz
+SHA256:
+ d58f0afa63e0e7b3fddb51048e185788ddb132721e3ff397ee6be08e8b40b883              150 Release
+ 155d127e51ce23e41b341a9801f288d9da64b92c86d014e5e90d2bde6b1075b9             1000 main/binary-amd64/Packages
+ afdff1f840576685d89f0c5ad1f559438851142b9a5318ea56b9014388b3fc8e              610 main/binary-amd64/Packages.gz
+SHA512:
+ df577f01b56a7e08c589f12b1f0367b085088be8babda5ebc22cda2767bda9070d2fd8c8cda846740d71e8cb0b97166529134bb555f996a90c205a34dc7a5fd3              150 Release
+ 44f2b4c4a3a3d54423ef9681042de2e1c2c72adcec5aaeead51814d404291d4bfc232effecd2721a2c26f035340a398e409c75fca92edbfd4b08efac2c72b625             1000 main/binary-amd64/Packages
+ b0e5a597aa6543bafad2cbe4bce194bfa9bd4bc167ebe4952531b49c7c7a5de98c38532c081ef227be697939892d33825268100e2195d9cd32e8ef71197c7906              610 main/binary-amd64/Packages.gz

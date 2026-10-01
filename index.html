@@ -1,0 +1,126 @@
+<!doctype html>
+<!--
+  The Couchbox OS download page.
+
+  This is the first of the three warnings ADR-0028 requires: the one a person reads
+  *before* they download an image. The other two are in the live session and in the
+  installer, and all three have to say the same thing, because a warning that appears
+  in one place and not the others reads as decoration.
+
+  Before publishing, replace the two placeholders below:
+    - REPLACE-WITH-RELEASES-URL: the tagged release that carries the ISO
+    - and, once the update archive exists, the archive URL on this page
+
+  No scripts, no fonts, no analytics, and no external requests: a page about an
+  operating system that runs on a couch should load on a bad connection.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Couchbox OS</title>
+<style>
+    :root { color-scheme: dark; }
+    body {
+        margin: 0;
+        background: #101014;
+        color: #e8e8ee;
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 { font-size: 2.2rem; margin: 0 0 0.25rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.25rem; margin: 2.5rem 0 0.5rem; }
+    p, li { color: #d7d7e0; }
+    .tagline { color: #9a9aa8; margin: 0 0 2rem; }
+    .warning {
+        border: 1px solid #a5432f;
+        background: #2a1512;
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+    }
+    .warning strong { color: #ffb3a0; }
+    .warning p { margin: 0; }
+    a.button {
+        display: inline-block;
+        background: #6c5ce7;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+    }
+    code {
+        background: #1b1b22;
+        padding: 0.1rem 0.35rem;
+        border-radius: 0.25rem;
+        font-size: 0.95em;
+    }
+    pre {
+        background: #1b1b22;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+    }
+    pre code { background: none; padding: 0; }
+    footer { color: #77778a; font-size: 0.9rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Couchbox OS</h1>
+<p class="tagline">Turn an old laptop, desktop or mini PC into a controller-friendly
+living room console.</p>
+
+<div class="warning">
+    <p><strong>Installing Couchbox OS erases the drive it is installed on, and it cannot be
+    undone.</strong> It replaces the operating system that is on the computer. Everything on
+    that drive is destroyed. Put anything you want to keep on another drive first.</p>
+</div>
+
+<h2>Try it before you decide anything</h2>
+<p>The image runs as a live system from the USB stick, in memory. No disk is touched while it
+is running, so you can check the machine you actually own:</p>
+<ul>
+    <li>picture and sound on the television</li>
+    <li>networking, wired and wireless</li>
+    <li>a USB game controller, and a keyboard</li>
+</ul>
+<p>If something does not work, switch the machine off. Nothing has changed. Installing is a
+choice you make from the live system, inside the installer, where the drive is named and the
+same warning is repeated.</p>
+
+<h2>Download</h2>
+<p><a class="button" href="REPLACE-WITH-RELEASES-URL">Download the latest image</a></p>
+<p class="tagline">amd64, for 64-bit Intel and AMD machines. Write it to a USB stick with a disk
+imager, then start the machine from that stick.</p>
+
+<h2>What it needs</h2>
+<ul>
+    <li>a 64-bit Intel or AMD machine, roughly 2012 or newer where practical</li>
+    <li>4 GB of memory, 8 GB recommended. A mechanical hard drive is fine</li>
+    <li>HDMI video and audio, for a television</li>
+    <li>a USB game controller, and a keyboard. A mouse is useful but never required</li>
+</ul>
+
+<h2>Updates</h2>
+<p>An installed machine updates in two parts, both with Debian's own tools. Debian keeps the
+operating system current. The Couchbox archive keeps the dashboard and its launchers current,
+and it carries Couchbox's own packages only, never a copy of Debian:</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade</code></pre>
+<p>To stop using the Couchbox archive, remove its source file and purge its keyring, which is
+the package <code>couchbox-archive-keyring</code>. Packages that came from the archive stay
+installed and stay at the version they are at.</p>
+
+<h2>Source, and other people's software</h2>
+<p>Couchbox OS is a derivative of Debian, and its own code is in the project's repository.
+The applications it can install remain the property of their authors and are fetched from
+their own sources: they are not redistributed here.</p>
+
+<footer>
+    <p>Branding by meme farmer studios.</p>
+</footer>
+
+</main>
+</body>
+</html>
