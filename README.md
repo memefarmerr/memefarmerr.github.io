@@ -18,6 +18,17 @@ means the image `scripts/build.sh` produces, it is ignored by git, and
 
 ## the site, and how it is published
 
+<<<<<<< Updated upstream
+Pushing to `main` publishes this folder. `.github/workflows/pages.yml` uploads
+`hosting/` exactly as it is committed and deploys it to the project's Pages site,
+on every push to `main` and when the workflow is run by hand. It needs no secret:
+the archive is signed on the build machine before it is committed, and the job
+itself only moves files, so GitHub's own token is enough.
+
+Copying the contents of this folder to another static host by hand still works:
+the page is a single file with no scripts and no external requests, and the
+archive is plain static files.
+=======
 The live site is the project's GitHub user site, `https://memefarmerr.github.io/`,
 published from its own repository. The contents of this folder are copied into
 that repository: `index.html` at its root, `archive/` and `.nojekyll` beside it.
@@ -26,6 +37,7 @@ That is the whole publishing step: copy what is here into the site repository
 and push. Nothing in this repository can deploy into the user site by itself,
 and no credential is kept around to try: the copy is deliberate, and what gets
 copied is visible in a commit.
+>>>>>>> Stashed changes
 
 The image does **not** go here. It is about a gigabyte, and a static site has a
 size and a bandwidth allowance to respect; a tagged release's assets are built
@@ -33,6 +45,14 @@ for files that size. The page links to the release.
 
 ## before publishing
 
+<<<<<<< Updated upstream
+One placeholder remains in `index.html`:
+
+- `REPLACE-WITH-RELEASES-URL`, with the tagged release that carries the ISO
+
+The page's opening comment still describes a second placeholder for the archive
+URL, but only the one above is left in the file; leave the rest of it alone.
+=======
 One placeholder has to be replaced in `index.html`:
 
 - `REPLACE-WITH-RELEASES-URL`, with the release that carries the ISO
@@ -40,6 +60,7 @@ One placeholder has to be replaced in `index.html`:
 The archive is signed before it is committed (see below). Publishing an unsigned
 archive would make every machine that has the channel refuse it, which is the
 correct behaviour and a poor release.
+>>>>>>> Stashed changes
 
 ## the archive, and what is deliberately not here
 
@@ -47,6 +68,22 @@ correct behaviour and a poor release.
 `dpkg-deb` for the package and `apt-ftparchive` for the indexes. It holds
 Couchbox's own packages only, never a mirror of Debian.
 
+<<<<<<< Updated upstream
+It is committed rather than ignored, which is unusual for generated files and deliberate: this
+folder exists to be published, a clone that produces an empty archive folder cannot be published,
+and whoever publishes a release should be able to see exactly what that release carried. It is a
+package of a few hundred kilobytes, not an image. Regenerate it with the script rather than editing
+it by hand: what matters is that the published archive is the product of a commit, and pushing the
+commit is what publishes it.
+
+The signing key is not here and never will be: the private half belongs in secure storage outside
+this repository, the same rule the repository already applies to secrets. The public half is not on
+this site either: it travels in the image, at
+`/usr/share/keyrings/couchbox-archive-keyring.gpg`, and becomes a package later (m10-06), because a
+key fetched from the same host as the archive would verify nothing. The archive is signed before it
+is committed, on the build machine, with the fingerprint and the command in `docs/updating.md`; apt
+refuses an unsigned archive, which is the correct behaviour rather than a bug to work around.
+=======
 It is committed rather than ignored, which is unusual for generated files and
 deliberate: this folder exists to be uploaded, a clone that produces an empty
 archive folder cannot be published, and whoever publishes a release should be
@@ -66,6 +103,7 @@ applies to secrets. The public half travels to machines in the image, at
 `/usr/share/keyrings/couchbox-archive-keyring.gpg`. Until the indexes are
 signed, apt refuses the archive, which is the correct behaviour rather than a
 bug to work around.
+>>>>>>> Stashed changes
 
 ## trying the page locally
 
