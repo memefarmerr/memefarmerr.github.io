@@ -7,9 +7,11 @@
   installer, and all three have to say the same thing, because a warning that appears
   in one place and not the others reads as decoration.
 
-  Before publishing, replace the two placeholders below:
+  Before publishing, replace the one placeholder below:
     - REPLACE-WITH-RELEASES-URL: the tagged release that carries the ISO
-    - and, once the update archive exists, the archive URL on this page
+
+  The site is the memefarmerr.github.io repository: the contents of hosting/ are
+  copied into it, so what is published is what is committed here.
 
   No scripts, no fonts, no analytics, and no external requests: a page about an
   operating system that runs on a couch should load on a bad connection.
@@ -108,9 +110,10 @@ imager, then start the machine from that stick.</p>
 operating system current. The Couchbox archive keeps the dashboard and its launchers current,
 and it carries Couchbox's own packages only, never a copy of Debian:</p>
 <pre><code>sudo apt update &amp;&amp; sudo apt upgrade</code></pre>
-<p>To stop using the Couchbox archive, remove its source file and purge its keyring, which is
-the package <code>couchbox-archive-keyring</code>. Packages that came from the archive stay
-installed and stay at the version they are at.</p>
+<p>To stop using the Couchbox archive, remove its source file
+(<code>/etc/apt/sources.list.d/couchbox.sources</code>) and the keyring it is verified with
+(<code>/usr/share/keyrings/couchbox-archive-keyring.gpg</code>). Packages that came from the
+archive stay installed and stay at the version they are at.</p>
 
 <h2>Source, and other people's software</h2>
 <p>Couchbox OS is a derivative of Debian, and its own code is in the project's repository.

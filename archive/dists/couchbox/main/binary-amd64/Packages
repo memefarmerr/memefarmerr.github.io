@@ -4,14 +4,14 @@ Version: 0.1.0-dev
 Priority: optional
 Section: misc
 Maintainer: Couchbox OS <maintainer@couchbox.invalid>
-Installed-Size: 424
+Installed-Size: 632
 Depends: python3
 Filename: pool/main/c/couchbox-shell/couchbox-shell_0.1.0-dev_all.deb
-Size: 63148
-MD5sum: 789f1da7400966f10b4bbb9ea4beab88
-SHA1: 5ae40ee3c77f2be74917238c5a310a29c2540a22
-SHA256: c05ed761778e4f7efebceb7519bd01e9eeb7aedce3ed2d30349927923bf86dd8
-SHA512: 1fa3a996cc9ac1d236a455e9591f9d7f4618649e27d7d72898d52f1ee3cb2095808d987f4693fae8fa16d174160861f1b150a75c6d91ab963df2a4eafb8ce054
+Size: 100480
+MD5sum: 936c60cbe7dffb5ece8765f682c73c58
+SHA1: f64f027bba4281a1d9e781fccab7f2ae4ff81473
+SHA256: dfbb58f0b83e71477326eefb3af615e9095e8cb5290c24ada354873dc51c0a5b
+SHA512: 587cff06260916b83c9db65fc0867002e5a3906730a6427dfb9b7b6e5d85055695588bdc719777db20500a2239b622e10f3ff03b631e27cc3f631863150619a1
 Description: the Couchbox dashboard, its guide, its wrappers and its applications
  The dashboard is the shell of a Couchbox OS machine: the session starts it, it
  lists what the machine can play, and it starts applications through stable

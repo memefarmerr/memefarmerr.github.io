@@ -17,11 +17,11 @@ with the project's key on the build machine:
 sudo ./scripts/build-archive.sh --sign 039BC3F8DCF336D7381C3A4EFCAD8F1A2114DE7B
 ```
 
-It is committed so that pushing the commit is publishing the folder: the Pages workflow uploads
-`hosting/` as it stands. It is regenerated rather than patched, because the value of the archive is
-that it is the product of a commit.
+It is committed so that publishing is copying a folder: `hosting/` is copied into the site
+repository as it stands, and this folder travels with it. It is regenerated rather than
+patched, because the value of the archive is that it is the product of a commit.
 
-The signing key is kept outside this repository and never reaches the workflow: the private half
+The signing key is kept outside this repository and never reaches the site: the private half
 belongs in secure storage, and the fingerprint is in `docs/updating.md`. Without `--sign` the
 archive is complete and unsigned, the script ends by saying it is not publishable, and apt refuses
 it, which is the correct behaviour rather than a bug.
