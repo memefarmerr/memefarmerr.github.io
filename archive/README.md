@@ -17,22 +17,30 @@ with the project's key on the build machine:
 sudo ./scripts/build-archive.sh --sign 039BC3F8DCF336D7381C3A4EFCAD8F1A2114DE7B
 ```
 
-<<<<<<< Updated upstream
-It is committed so that pushing the commit is publishing the folder: the Pages workflow uploads
-`hosting/` as it stands. It is regenerated rather than patched, because the value of the archive is
-that it is the product of a commit.
-
-The signing key is kept outside this repository and never reaches the workflow: the private half
-=======
 It is committed so that publishing is copying a folder: `hosting/` is copied into the site
-repository as it stands, and this folder travels with it. It is regenerated rather than
-patched, because the value of the archive is that it is the product of a commit.
+repository as it stands, or pushed there by `.github/workflows/publish.yml`, and this folder
+travels with it. It is regenerated rather than patched, because the value of the archive is that
+it is the product of a commit.
 
-The signing key is kept outside this repository and never reaches the site: the private half
->>>>>>> Stashed changes
-belongs in secure storage, and the fingerprint is in `docs/updating.md`. Without `--sign` the
-archive is complete and unsigned, the script ends by saying it is not publishable, and apt refuses
-it, which is the correct behaviour rather than a bug.
+The signing key is kept outside this repository and never reaches the site or the workflow: the
+private half belongs in secure storage, and the fingerprint is in `docs/updating.md`. Without
+`--sign` the archive is complete and unsigned, the script ends by saying it is not publishable,
+and apt refuses it, which is the correct behaviour rather than a bug.
+
+## release versions
+
+`build-archive.sh` appends the commit count and the revision to `VERSION`, because apt compares
+versions and nothing else: a rebuilt package left at the same version is one apt will never
+install. That is right for every build between releases and wrong for the release itself, so a
+release build sets `COUCHBOX_RELEASE=1` and the package is named for the version in `VERSION`:
+
+```bash
+sudo env COUCHBOX_RELEASE=1 ./scripts/build-archive.sh --sign 039BC3F8DCF336D7381C3A4EFCAD8F1A2114DE7B
+# pool/main/c/couchbox-shell/couchbox-shell_1.0.0_all.deb
+```
+
+A release build refuses to run from a tree with uncommitted changes, because a release that says
+`1.0.0` while carrying something else is the one kind of version that cannot be corrected later.
 
 To try the whole path with no network and one machine:
 
