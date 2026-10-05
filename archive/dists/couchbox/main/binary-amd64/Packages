@@ -42,6 +42,48 @@ Description: the Couchbox dashboard, its guide, its wrappers and its application
 
 Package: couchbox-shell
 Architecture: all
+Version: 1.0.0+git178.gc351e46.dirty
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 1352
+Depends: python3
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.0.0+git178.gc351e46.dirty_all.deb
+Size: 150656
+MD5sum: 5364c373ded4f8751ccb328208157f31
+SHA1: 9d29cc59f620baec2a873f2284f4fef8a5e7f4c3
+SHA256: 0751853acfbc95c1964b59669c1770681614056af5b2c1805898bb7bc294a16a
+SHA512: 9c27294f52fbbe56b896c4381678eb67906b0996510bc8a356831c0ff488e2d9e2f1c472f5f4ea89ad0fba8adf9a5f46bb2745f3d8020dbb8bde122f8c49e3d7
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
+Version: 1.0.0+git179.gdeb0e07
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 1352
+Depends: python3
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.0.0+git179.gdeb0e07_all.deb
+Size: 150744
+MD5sum: c1bcbea33fbb8fca3aedd0b42b191170
+SHA1: 227af59a0571e65a12f68a66d554d248908212bd
+SHA256: b3ef8b2a6981c80bd18be3ac72dc4aa7247ce7f1a2f6cd849a9eae30f335c37c
+SHA512: 72ee7771034a2caadde285bbcc0d1e56ecedc184655cb30e24a19c2dde54dbc8831ad8d405967fa465edcb03464b54045fe43084795e5ed4d72fe7bf50595036
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
 Version: 1.0.0
 Priority: optional
 Section: misc
