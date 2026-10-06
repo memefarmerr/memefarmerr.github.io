@@ -756,6 +756,27 @@ Description: the Couchbox dashboard, its guide, its wrappers and its application
 
 Package: couchbox-shell
 Architecture: all
+Version: 1.0.0+git301.g3e8bc38
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 2296
+Depends: python3, xdotool, unclutter
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.0.0+git301.g3e8bc38_all.deb
+Size: 835540
+MD5sum: 217fadfcd30718c8e707069fc03deec8
+SHA1: 895ab391f0cdb2986bdecfec62f0d5dd56dc659b
+SHA256: 8fe5f87a081fa0b6433f7ba1693492f7a6e6b344131e12f0439cd8f5d60252e1
+SHA512: 5670e4be616cc1715c715a575900883670507c20446851b48138c5c367530442837f66f0c928cbc4d48473a9f81ad6e14dbffdc4aa81ad52d624296daeda4416
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
 Version: 1.0.0
 Priority: optional
 Section: misc
