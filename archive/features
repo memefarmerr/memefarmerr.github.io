@@ -1,0 +1,42 @@
+# what this machine is made of, beyond the package that carries all of it.
+#
+# One line per addition, with a version of its own. The image ships this file; the update channel may
+# publish a newer one at a stable address; and a machine takes what it is missing and newer at, one
+# entry at a time. Nothing about one entry's version can gate another's, and none of them is gated on
+# the version of the operating system that carries them.
+#
+# Why this exists is the most expensive fault in this project's history. Everything above travelled in
+# one package with one version, so when the work after 1.0.0 was called 1.1.0 and then renamed 1.0.1, a
+# machine that had installed the higher number could never be reached again: apt compares against what
+# is installed, and every later fix and every new application was numerically older. What the person
+# saw was that updating had simply stopped working. A version per addition means the worst a mistake can
+# do is delay the one thing it is about. See ADR-0069.
+#
+# `preloaded` means the image already contains it, and taking it is a local act: the files are there
+# and are put where they belong, with no download and no network at all. That is what "preload future
+# additions into the ISO" means, and it is the state everything below is in, because the image is
+# where they arrived from.
+#
+# The versions here are not the operating system's. Each starts at 1 and moves when that addition
+# changes. Nothing compares them with each other.
+
+feature: couchbox-shell
+version: 1
+preloaded: yes
+description: The dashboard: the tiles, the collections, the overlay, and what starts everything else.
+
+feature: settings
+version: 1
+preloaded: yes
+description: Sound, network, Bluetooth, controllers, display, time, updates, storage and what this machine is.
+
+feature: store
+version: 1
+preloaded: yes
+description: What the catalogue offers, and installing or removing it.
+
+feature: install
+version: 1
+preloaded: yes
+live-only: yes
+description: Erase a disk and put Couchbox OS onto it. Offered only while running from the medium.
