@@ -40,3 +40,12 @@ version: 1
 preloaded: yes
 live-only: yes
 description: Erase a disk and put Couchbox OS onto it. Offered only while running from the medium.
+
+# Offered rather than preloaded, which means it arrives as couchbox-feature-files at the version above
+# rather than being already on the disk (ADR-0071). It is finished and it has been asked for, and this
+# entry is the whole of what makes it arrive: nothing is built for it that was not already built, and
+# nothing is sent to a machine that does not read this file.
+feature: files
+version: 1
+preloaded: no
+description: Look at what is on this machine, and what is on anything plugged into it.
