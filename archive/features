@@ -46,6 +46,6 @@ description: Erase a disk and put Couchbox OS onto it. Offered only while runnin
 # entry is the whole of what makes it arrive: nothing is built for it that was not already built, and
 # nothing is sent to a machine that does not read this file.
 feature: files
-version: 6
+version: 7
 preloaded: no
 description: Look at what is on this machine, and what is on anything plugged into it.
