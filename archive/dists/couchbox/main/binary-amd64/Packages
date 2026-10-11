@@ -24,10 +24,10 @@ Maintainer: Couchbox OS <memefarmerr@gmail.com>
 Installed-Size: 28
 Filename: pool/main/c/couchbox-feature-files/couchbox-feature-files_2_all.deb
 Size: 6972
-MD5sum: 61dc5a2dd42a472d9ffcc5205c1e8e21
-SHA1: 550101afb9f0881b9c9d185d83aba45a658d20c3
-SHA256: e0090afc636cdbf422d353884c7f0fb51fc66317c469cb87ab294d7676a7e762
-SHA512: 7a293a7f8c34e990eaaa58215b02354250f06645489fbc9f604d13e3be0925d91e2cfbd670fdba879020846f72add5fdcbe97da495a192f9d1394c12ff58fe14
+MD5sum: 8713482c22efec470b27e7f133eeb094
+SHA1: c3d54d572ba68db639914ca1b128a2bcd4720b77
+SHA256: 3d70d75893995df490eb4cef70dd1fde4e6b2e93da8266b9ce92b433b1e4dd6e
+SHA512: 29c11b94fc662e4f6457baef9cd5e4404f3e1ecc7a32a23444ff507c6ab031f545bd9f3f638240ff6070c21780a828f3dcc0a8acdeb31425d67878082924b10a
 Description: The files addition to Couchbox OS
  An addition that arrives on its own, with a version of its own, rather than
  travelling inside the package that carries the operating system.
@@ -1957,6 +1957,27 @@ MD5sum: e75a7d3bd4eba655bedd3ecb92feaec5
 SHA1: 61edac575062d3aeb93442a764c7a811a034ed6d
 SHA256: 841b9ff97eb92760fdcbe90f7b551746c587ac7233575830c5e94c38dd4b333f
 SHA512: 74c2157ff638b5011f94cc004a1560144c0a3f8d13d8b3ac6931b9fc14c72b358e33c4fc144a013f4e4b934fb3e1ecd162fa10bfab8ca2f63cc217001eb23e17
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
+Version: 1.1.1+git501.gb6d17aa
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 2588
+Depends: python3, xdotool, unclutter
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.1.1+git501.gb6d17aa_all.deb
+Size: 890864
+MD5sum: cad8473e33ac4bb5415f030e40a889c6
+SHA1: 1776d153bc51deaf55a3403e36a9bd6fdc5b927a
+SHA256: 8d53eead7bb8a7be6ee7a9b053cc509607d5fe25d5e17da1304584e5646e7732
+SHA512: bd339604df3c44aac199585b1e91042fd1f325efc1de7cbb540f1a2b42315b85514a86d4cbda09ce002423d2aaeabf033ebf5d90ce823f9dd5b8f6299c27cc0e
 Description: the Couchbox dashboard, its guide, its wrappers and its applications
  The dashboard is the shell of a Couchbox OS machine: the session starts it, it
  lists what the machine can play, and it starts applications through stable
