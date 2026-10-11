@@ -2570,6 +2570,48 @@ Description: the Couchbox dashboard, its guide, its wrappers and its application
 
 Package: couchbox-shell
 Architecture: all
+Version: 1.1.2+git554.g70592e9
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 2712
+Depends: python3, xdotool, unclutter
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.1.2+git554.g70592e9_all.deb
+Size: 903800
+MD5sum: 6293ad0ea11c058a25f153df6dbe2ec3
+SHA1: 852e390d59755496e3bd146c6d25dde74cdc5a22
+SHA256: bef9550e88e9d34b1eca8197e2e4806c58c743412da474aff99c15ce510ab958
+SHA512: 6ef58e6776ee08d06b75dcf313e2654085f03903619b7725b3538cbbcb15b6c0fc6c381b3a3786af68e3e76750208b2bd4ad1a8d5cb2aaae798c40c56ba93626
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
+Version: 1.1.2+git556.g448c2bb
+Priority: optional
+Section: misc
+Maintainer: Couchbox OS <memefarmerr@gmail.com>
+Installed-Size: 2712
+Depends: python3, xdotool, unclutter
+Filename: pool/main/c/couchbox-shell/couchbox-shell_1.1.2+git556.g448c2bb_all.deb
+Size: 903768
+MD5sum: 1327ad85d1d57e1fc72a7829e82f20d8
+SHA1: 61e006d457a003e58187fceb015072da8f8ae3d9
+SHA256: 3c77946f8882e2c7dd4565d6b54bc50679d46783abdb4cdc7a18129a04c5d91a
+SHA512: c3793c0992949907fd49eb91fed7b39cd89f918b7ba98a42885dbcd223d47a8cc8e472d6fbdeaeed1c54018184a432367493ae042db83662181abc88b583ef61
+Description: the Couchbox dashboard, its guide, its wrappers and its applications
+ The dashboard is the shell of a Couchbox OS machine: the session starts it, it
+ lists what the machine can play, and it starts applications through stable
+ wrappers. This package carries the dashboard, the guide that listens for the
+ guide key, the launcher wrappers, the store and the settings, and the catalogue
+ of optional applications they read.
+
+Package: couchbox-shell
+Architecture: all
 Version: 1.1.2
 Priority: optional
 Section: misc
