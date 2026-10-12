@@ -1,23 +1,23 @@
 Architectures: amd64
 Codename: couchbox
 Components: main
-Date: Mon, 12 Oct 2026 07:13:13 +0000
+Date: Mon, 12 Oct 2026 07:17:50 +0000
 Label: Couchbox OS
 Origin: Couchbox OS
 Suite: couchbox
 MD5Sum:
- 73939b0c33dcf889b68d3f9c623cd6d2              150 Release
- a7ab5bbf59e1c524783e8a32808652b2           157726 main/binary-amd64/Packages
- eaabb73af79a0997616a2431f0aeace7            30322 main/binary-amd64/Packages.gz
+ 028209ede74f77b6251d43cc265e15e8              150 Release
+ 340ca8e3bfb7bd2325d3e1cb3283eea8           158766 main/binary-amd64/Packages
+ 6c1940e800a8ef71534735cdd274d9a2            30509 main/binary-amd64/Packages.gz
 SHA1:
- f41ad4147d2c2de3759404d106c2fa3c279763fb              150 Release
- cb227091e8d8b284cb513ec784daba9a505eb99a           157726 main/binary-amd64/Packages
- f8dc4912ce3394ef08ffecbeea8a7a2a0752233e            30322 main/binary-amd64/Packages.gz
+ 711e582e8c2764a044f8c6ae7277473cbe3f2952              150 Release
+ a363ee864ab335f5123766e7e02b5098620bc3f9           158766 main/binary-amd64/Packages
+ a2cdcfcf0b091a23b96c414ff656927213521f23            30509 main/binary-amd64/Packages.gz
 SHA256:
- 96a8e16352ee72087973765cd5be3942f07de95f149f05218ffb95881f942354              150 Release
- a622db31f7b4769f2993fd13806ffd796c65dcd092c2d5ad17b6081a50e18074           157726 main/binary-amd64/Packages
- 48d6f391afc5bba511843e3274183dbd3cbcacefcbfdebb65edd6a9c3f032936            30322 main/binary-amd64/Packages.gz
+ f55248cb69a7ef5435ad9224d4d0463e85a1182516e5d66f7a4cb16ac8eb2e69              150 Release
+ 9ee281ab115f68bfdab4b2b1e6471c75cc30719921b95bf3ba44c659a8527546           158766 main/binary-amd64/Packages
+ f8084d7e7471fc8575e4afbab6047d43675cdea90d4b2833d38d364fd33daee6            30509 main/binary-amd64/Packages.gz
 SHA512:
- 2337fafc3a731bacd34e36c0597157de100777750e8e838d5d55ef14312d446467efaccc0589118ca00c354bffdede1fff7ff573579965be6708e45c11fef1a1              150 Release
- 25cde6ae5ec8c5c7f355619eda65b721da825a73dc7251a389b9f6b7dd22bf4bb737acdb54150557b488abae522c2607969631ffcee0ee779d7f5debd2385675           157726 main/binary-amd64/Packages
- 4a5ec68ab5f69fc81ee5c270b32e967455b493a51e1546427473aa5cccea0a78616648d246d123ac78256d44b6b1b1f56470356056be99923c96d01d5777cf3c            30322 main/binary-amd64/Packages.gz
+ 34d1fd18d079f74f93efce5aa8aadab9c4bd06efd4305d0959eb3141cc108e25ed29077ad3e752eb6cd1aa02cf9efe5440cf24b97278b51540a8c22f149309db              150 Release
+ 19296f5ee371a53f59a1eda038b1fd1b4d2be846431de77ff37fc800bdeada5f102b8f94ccc78c0c445ae9f3022df275ba02910c52af28c059ae708eab824577           158766 main/binary-amd64/Packages
+ 938e6565a517e1f8819b226f1f374cfe8746092e926701d028bf9b6406ee414f6b483eeee2b0e6e74b8a86a65406c009751371bfa1040dab8358dfd9e38e1a4e            30509 main/binary-amd64/Packages.gz
